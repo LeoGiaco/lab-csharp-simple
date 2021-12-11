@@ -100,7 +100,7 @@ namespace ComplexAlgebra
         /// <param name="c1"> The first complex number. </param>
         /// <param name="c2"> The second complex number. </param>
         /// <returns> True if they are equal, false otherwise. </returns>
-        public static bool operator ==(Complex c1, Complex c2) => c1.Equals(c2);
+        public static bool operator ==(Complex c1, Complex c2) => ((object)c1 == null && (object)c2 == null) || ((object)c1 != null && c1.Equals(c2));
         /// <summary>
         /// Returns a boolean indicating whether the two Complex numbers are different.
         /// </summary>
@@ -108,5 +108,7 @@ namespace ComplexAlgebra
         /// <param name="c2"> The second complex number. </param>
         /// <returns> True if they are different, false otherwise. </returns>
         public static bool operator !=(Complex c1, Complex c2) => !(c1 == c2);
+
+        public static implicit operator Complex(int v) => new Complex(v, 0);
     }
 }

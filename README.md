@@ -45,7 +45,7 @@ Questa impiegherà al suo interno la classe per i numeri complessi definita nell
 La classe `Program` rappresenta il punto d'ingresso dell'applicazione e, come esempio, mostra un flusso di operazioni svolte sulla calcolatrice ed il loro risultato.
 
 Scopo dell'esercizio è imparare a modellare ed implementare in .NET un oggetto con stato mutevole, che possa essere osservato tramite proprietà ed alterato mediante metodi. 
-In particolare, lo studente dovrà modellare ed implementare una classe una classe che rappresenti una calcolatrice di numeri complessi.
+In particolare, lo studente dovrà modellare ed implementare una classe che rappresenti una calcolatrice di numeri complessi.
 A tal fine, si prenda in considerazione la classe `Calculator` ed i suggerimenti puntuali ivi forniti e se ne completi il codice affinché l'esecuzione di `Program` abbia senso.
 
 Si immagini la calcolatrice come avente un display capace di visualizzare un solo numero complesso alla volta e 3 tasti: '+', '-', '=' e 'Reset'.

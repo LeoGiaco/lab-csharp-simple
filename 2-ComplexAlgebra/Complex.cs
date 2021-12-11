@@ -22,8 +22,20 @@ namespace ComplexAlgebra
         public double Modulus => Math.Sqrt(Math.Pow(Real, 2) + Math.Pow(Imaginary, 2));
         /// <summary>
         /// The phase, or argument, of the complex number.
+        /// The phase calculated here is in the range [0,2pi[.
         /// </summary>
-        public double Phase => Math.Atan2(Imaginary, Real);
+        public double Phase
+        {
+            get
+            {
+                double phase = Math.Atan2(Imaginary, Real);
+                if(phase < 0)
+                {
+                    phase += 2 * Math.PI;
+                }
+                return phase;
+            }
+        }   
 
         /// <summary>
         /// Creates a new Complex number.
